@@ -15,7 +15,7 @@ pp = Predictor()
 pp.load_pickle()
 app = Flask(__name__)
 CORS(app)
-@app.route("/api/check",methods=["GET","POST"])
+@app.route("/",methods=["GET","POST"])
 def give():
     return jsonify({"status":"OK","message":"Hello"})
 @app.route("/api/predict",methods=['POST'])
