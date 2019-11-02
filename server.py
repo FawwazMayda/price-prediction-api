@@ -62,7 +62,7 @@ def predict_big():
     print(price_pred)
     return jsonify({"data":content,"prediction":price_pred})
 
-..
+
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0",debug=True,port=8080)
